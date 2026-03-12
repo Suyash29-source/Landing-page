@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: #020617;
+  color: #f8fafc;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-feature-settings: 'ss01' on, 'cv01' on;
+}
+
+.glass-card {
+  @apply rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-card;
+}
+
+.section-shell {
+  @apply mx-auto max-w-6xl px-6 py-20 md:px-8 lg:py-28;
+}
+
+.gradient-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.7), rgba(34, 197, 94, 0.7), transparent);
+}
